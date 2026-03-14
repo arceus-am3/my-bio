@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0a0b0f" />
+    <title>Arceus | Bio !</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css?v=2" />
+  </head>
+  <body>
+    <div class="bg">
+      <video
+        class="video-bg"
+        id="bgVideo"
+        loop
+        playsinline
+        preload="metadata"
+        poster="assets/poster.jpg"
+      >
+        <source src="assets/bg.mp4" type="video/mp4" />
+      </video>
+      <div class="bg-fallback" aria-hidden="true"></div>
+      <div class="bg-glow" aria-hidden="true"></div>
+      <div class="bg-noise" aria-hidden="true"></div>
+    </div>
+
+    <div class="start-overlay" id="startOverlay">
+      <button
+        class="start-text-btn"
+        id="startButton"
+        type="button"
+        aria-label="Start"
+        data-text="Click here to see the motion baby"
+      >
+        Click here to see the motion baby
+      </button>
+    </div>
+
+    <main class="stage">
+      <section class="card" aria-label="Profile card">
+        <button class="mute-btn" id="videoMuteToggle" type="button" aria-label="Mute video">
+          <span class="mute-icon" aria-hidden="true">
+            <svg class="icon-on" viewBox="0 0 24 24">
+              <path d="M10 4.5 5.5 8H3v8h2.5L10 19.5V4.5Zm7.5 1.8-1.4 1.4a6.3 6.3 0 0 1 0 8.9l1.4 1.4a8.3 8.3 0 0 0 0-11.7ZM15 9.3l-1.4 1.4a2.3 2.3 0 0 1 0 3.2l1.4 1.4a4.3 4.3 0 0 0 0-6Z"/>
+            </svg>
+            <svg class="icon-off" viewBox="0 0 24 24">
+              <path d="M10 4.5 5.5 8H3v8h2.5L10 19.5V4.5Zm9.2 3.2-1.4-1.4-3.2 3.2-3.2-3.2-1.4 1.4 3.2 3.2-3.2 3.2 1.4 1.4 3.2-3.2 3.2 3.2 1.4-1.4-3.2-3.2 3.2-3.2Z"/>
+            </svg>
+          </span>
+        </button>
+        <div class="top-row">
+          <div class="top-left">
+            <div class="avatar-wrap">
+              <div class="avatar" role="img" aria-label="Profile photo"></div>
+            </div>
+
+            <div class="title-wrap">
+              <p class="eyebrow">Digital Creator</p>
+              <h1 class="name">𝒜𝓇𝒸𝑒𝓊𝓈 !!</h1>
+              <p class="tagline">
+                <span id="type"></span><span class="cursor">|</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="top-right" aria-label="Quick stats">
+            <div class="stat-pill">
+              <span class="stat-label">Followers</span>
+              <span class="stat-value" id="followerCount">12.4k</span>
+            </div>
+            <div class="stat-pill">
+              <span class="stat-label">Views</span>
+              <span class="stat-value" id="viewCount">921,235</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="social-row" aria-label="Social links">
+          <a class="icon-btn" href="https://discord.com/users/arceus_a" aria-label="Discord">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M19.5 6.5a14 14 0 0 0-3.8-1.2l-.2.4a10 10 0 0 1 2.9 1.5c-2.5-1.3-5.9-1.3-8.4 0a10 10 0 0 1 2.9-1.5l-.2-.4a14 14 0 0 0-3.8 1.2C6.3 9.2 6 12 6 12s.4 3 2.4 4.5c0 0 1.4-1.7 2-2.7-.8-.2-1.2-.6-1.2-.6s.1.1.3.2c1.9 1.1 4.4 1.1 6.3 0 .2-.1.3-.2.3-.2s-.4.4-1.2.6c.6 1 2 2.7 2 2.7 2-1.5 2.4-4.5 2.4-4.5s-.3-2.8-1.9-5.5ZM9.9 13.4c-.6 0-1-.6-1-1.3s.4-1.3 1-1.3 1 .6 1 1.3-.4 1.3-1 1.3Zm4.2 0c-.6 0-1-.6-1-1.3s.4-1.3 1-1.3 1 .6 1 1.3-.4 1.3-1 1.3Z"
+              />
+            </svg>
+          </a>
+          <a class="icon-btn" href="https://www.instagram.com/arceus._am" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4Zm10 2H7a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2Zm-5 3.5A5.5 5.5 0 1 1 6.5 14 5.5 5.5 0 0 1 12 8.5Zm0 2A3.5 3.5 0 1 0 15.5 14 3.5 3.5 0 0 0 12 10.5ZM18 7.1a1 1 0 1 1-1 1 1 1 0 0 1 1-1Z"
+              />
+            </svg>
+          </a>
+          <a class="icon-btn" href="https://youtube.com/@arceus_amv_" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M20.5 7.5a2.5 2.5 0 0 0-1.8-1.8C17.1 5.3 12 5.3 12 5.3s-5.1 0-6.7.4A2.5 2.5 0 0 0 3.5 7.5 26 26 0 0 0 3.3 12a26 26 0 0 0 .2 4.5 2.5 2.5 0 0 0 1.8 1.8c1.6.4 6.7.4 6.7.4s5.1 0 6.7-.4a2.5 2.5 0 0 0 1.8-1.8 26 26 0 0 0 .2-4.5 26 26 0 0 0-.2-4.5ZM10.5 15.2V8.8L15.8 12Z"
+              />
+            </svg>
+          </a>
+          <a class="icon-btn" href="https://beacons.ai/arceus._am" aria-label="Website">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12 3a9 9 0 1 0 9 9 9 9 0 0 0-9-9Zm5.7 6H14a17 17 0 0 0-1.2-4.5A7.1 7.1 0 0 1 17.7 9ZM12 5.1A14.3 14.3 0 0 1 13.8 9H10.2A14.3 14.3 0 0 1 12 5.1Zm-5.7 10H10a17 17 0 0 0 1.2 4.5A7.1 7.1 0 0 1 6.3 15Zm0-2A7.1 7.1 0 0 1 6.3 9H10a17 17 0 0 0-1 4Zm5.7 5.8A14.3 14.3 0 0 1 10.2 15h3.6A14.3 14.3 0 0 1 12 18.9ZM14 13a17 17 0 0 0-1-4h3.7a7.1 7.1 0 0 1 0 6H13a17 17 0 0 0 1-2Z"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <div class="section-title">Quick Links</div>
+        <div class="link-list" id="linkList" aria-label="Link list"></div>
+
+        <div class="footer-row">
+          <span class="tiny">ᴶᵁˢᵀ ᴬᴺᴼᵀᴴᴱᴿ ˢᴵᴰᴱ ᶜᴴᴬᴿᴬᶜᵀᴱᴿ ᵂᴵᵀᴴ ᴹᴬᴵᴺ ᶜᴴᴬᴿᴬᶜᵀᴱᴿ ᴰᴿᴱᴬᴹˢ</span>
+        </div>
+      </section>
+    </main>
+
+    <script src="/app.js?v=2"></script>
+  </body>
+</html>

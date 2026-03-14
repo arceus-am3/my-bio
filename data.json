@@ -1,0 +1,51 @@
+{
+  "stats": [
+    { "label": "Followers", "value": "12.4k" },
+    { "label": "Likes", "value": "26.2k" },
+    { "label": "Views", "value": "35k" }
+  ],
+  "links": [
+    {
+      "title": "In Anime! app",
+      "subtitle": "Watch anime in sub or dub",
+      "icon": "play",
+      "url": "https://in-anime.vercel.app/"
+    },
+    {
+      "title": "Anikwik Manga",
+      "subtitle": "Daily manga drops",
+      "icon": "bars",
+      "url": "https://anikwik-manga.vercel.app/manga-list"
+    },
+    {
+      "title": "Discord",
+      "subtitle": "Join the server",
+      "icon": "discord",
+      "url": "https://discord.com/channels/@me"
+    },
+    {
+      "title": "Instagram",
+      "subtitle": "Reels and updates",
+      "icon": "instagram",
+      "url": "https://www.instagram.com/arceus._am"
+    },
+    {
+      "title": "GitHub",
+      "subtitle": "Code and projects",
+      "icon": "github",
+      "url": "https://github.com/arceus-am3"
+    },
+    {
+      "title": "YouTube",
+      "subtitle": "Main channel",
+      "icon": "youtube",
+      "url": "https://youtube.com/@rykzz-sensei?si=QwkZcBVB5V8uHf9y"
+    },
+    {
+      "title": "Telegram",
+      "subtitle": "News and alerts",
+      "icon": "telegram",
+      "url": "https://t.me/Arceus_am"
+    }
+  ]
+}
