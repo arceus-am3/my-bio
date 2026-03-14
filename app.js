@@ -15,7 +15,7 @@ const startText = document.getElementById("startText");
 const taglines = [
   "Hello, Guy's.",
   "Founder of In anime! App.",
-  "Amv Editor,Student,Otaku .",
+  "Amv Editor,Student",
   "Just For Fun.",
 ];
 
